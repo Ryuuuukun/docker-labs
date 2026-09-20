@@ -28,7 +28,7 @@ docker version # client: 29.8.0, server: 29.8.0
 docker run --name select-tag -d python:3.10.20-alpine
 ```
 
-![[image-01.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-01.png">
 
 (ссылки на лекции: [запуск в конкретном теге](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/02_commands.md#10-docker-attach-%D0%B8--d-%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%B5-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0))
 
@@ -49,11 +49,11 @@ docker run --name lab-web-shouryuuko -d -p 5000:80 nginx:alpine
 
 Запуск на порту `8080`:
 
-![[image-02.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-02.png">
 
 Перезапуск на порту `5000`:
 
-![[image-03.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-03.png">
 
 (ссылки на лекции: [проброс портов](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/03_docker_run.md#3-%D0%BF%D1%80%D0%BE%D0%B1%D1%80%D0%BE%D1%81-%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B2--p), [именование контейнеров](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/03_docker_run.md#4-%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%BE%D0%B2---name))
 
@@ -77,11 +77,11 @@ echo "<h1>!dlroW, olleH</h1>" > ~/docker/site/index.html
 
 До изменения содержимого файла `index.html`:
 
-![[image-04.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-04.png">
 
 После изменения содержимого:
 
-![[image-05.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-05.png">
 
 (ссылки на лекции: [монтирование томов](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/03_docker_run.md#5-%D1%82%D0%BE%D0%BC-%D0%B4%D0%BB%D1%8F-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--v))
 
@@ -119,11 +119,11 @@ ls -l ~/docker/site
 
 Листинг каталога `/usr/share/nginx/html` и попытка создания файла при `read-only`:
 
-![[image-07.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-07.png">
 
 Создание файла при `read-write` и проверка на хосте:
 
-![[image-08.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-08.png">
 
 (ссылки на лекции: [подключение к контейнеру](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/02_commands.md#%D1%88%D0%B0%D0%B3-3-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-%D0%B2-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B5-docker-exec))
 
@@ -143,7 +143,7 @@ docker attach lab-web-shouryuuko
 
 Фрагмент журнала контейнера:
 
-![[image-09.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-09.png">
 
 (ссылки на лекции: [получение логов](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/03_docker_run.md#8-%D0%BB%D0%BE%D0%B3%D0%B8-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0-docker-logs), [прикрепление и корректная отстыковка](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/02_commands.md#10-docker-attach-%D0%B8--d-%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%B5-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0))
 
@@ -152,7 +152,7 @@ docker attach lab-web-shouryuuko
 ```shell
 # Запускаем контейнер в оболочке Shell и указываем, что выполнить
 docker run --name short-lived alpine sh -c 'cat << "EOF"
-                ⢀⠤⡀
+                   ⢀⠤⡀
  ⢠⠊⣉⠒⠤⢀⡀       ⡐⢁⠴⢜⢄
  ⡎⢸ ⠉⠐⠢⢌⠑⢄    ⡸ ⡆  ⠣⠱⡀
  ⡇⢸     ⣀⠗  ⠉⠉⠁  ⠙⠢⠤⡀⢃⢱
@@ -173,7 +173,7 @@ docker ps -a
 
 Запуск контейнера и статус контейнера после выполнения:
 
-![[image-12.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-12.png">
 
 (ссылка на лекции: [запуск краткоживущего процесса](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/03_docker_run.md#6-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5---rm))
 
@@ -181,11 +181,11 @@ docker ps -a
 
 Вырезка блока `ports`: 
 
-![[image-10.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-10.png">
 
 Вырезка блока `mounts`:
 
-![[image-11.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-11.png">
 
 (ссылка на лекции: [инспекция контейнера](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/03_docker_run.md#6-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5---rm))
 
@@ -196,7 +196,7 @@ docker rm -f select-tag lab-web-shouryuuko short-lived
 docker rmi alpine:latest nginx:alpine python:3.10.20-alpine
 ```
 
-![[image-13.png]]
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-01/image-13.png">
 
 (ссылка на лекции: [удаление контейнеров](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/02_commands.md#4-docker-rm), [удаление образов](https://github.com/tiranousor/os-modern-docker-course/blob/main/4-course/docker-and-containers/lectures/02_commands.md#6-docker-rmi))
 
