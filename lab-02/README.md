@@ -17,16 +17,16 @@
 
 #### История сборки
 
-![](proof/history.png)
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-02/proof/history.png"></img>
 
 #### Проверка эндпоинтов
 
-![](proof/endpoints.png)
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-02/proof/endpoints.png"></img>
 
 #### Проверка поддержки работы с `--read-only`
 
-![](proof/read_only.png)
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-02/proof/read_only.png"></img>
 
 #### Проверка `SIGTERM`
 
-![](proof/sigterm.png)
+<img src="https://github.com/Ryuuuukun/docker-labs/blob/main/lab-02/proof/sigterm.png"></img>
